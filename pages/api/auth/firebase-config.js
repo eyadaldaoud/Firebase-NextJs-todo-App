@@ -1,7 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from 'firebase/firestore'
-
+/// these keys are useless as the firebase app linked to them is deleted 
+/// you need to add your own keys
 const firebaseConfig = {
   apiKey: process.env.API,
   authDomain: process.env.DOMAIN,
