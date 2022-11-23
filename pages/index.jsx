@@ -151,7 +151,7 @@ const index = () => {
       
     {userData?.map((items, key) => (
     
-    <Card css={{display:'flex',width:'400px', padding:'$xl', margin:'$xl'}} key={key}>
+    <Card css={{display:'flex',width:'400px', padding:'$xl', margin:'$xl', minWidth:'200px'}} key={key}>
 
       
      {items._document.data.value.mapValue.fields.completed.booleanValue == true 
@@ -179,7 +179,7 @@ const index = () => {
         ? {textDecoration:'line-through'}
         : {textDecoration:'none'}}>{items._document.data.value.mapValue.fields.date.stringValue}</Text>
     
-      <Button color={'gradient'} css={{marginTop:'$md'}} onClick={async() => {
+      <Button  color={'gradient'} css={{marginTop:'$md', minWidth:'auto'}} onClick={async() => {
           const docRef =  doc(db, `${user.uid}`, items.id)
             await updateDoc(docRef, {
               completed: true
@@ -187,7 +187,7 @@ const index = () => {
             data()
        }}>Mark as Completed</Button>
 
-      <Button color={'error'} css={{marginTop:'$md'}} onClick={async() => {
+      <Button color={'error'} css={{marginTop:'$md', minWidth:'auto'}} onClick={async() => {
         const docRef = doc(db, `${user.uid}`, items.id)
          await deleteDoc(docRef)
          data()
