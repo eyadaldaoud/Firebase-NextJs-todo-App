@@ -38,7 +38,7 @@ const Nav = () => {
       >
         
         <Text b color="secondary">
-          To-Do App
+          To-Do App by Eyad
         </Text>
         <FcTodoList size={20}/>
         
