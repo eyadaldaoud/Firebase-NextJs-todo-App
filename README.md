@@ -1,4 +1,4 @@
-# My First to do app with crud operations
+# Modren ToDo App with firebase-auth , firebase and nextjs
  
 ## ![Firebase_and_NextJs_modren_ToDo_App](https://user-images.githubusercontent.com/103299832/203451574-1d647a4a-54a5-4ea9-9b27-14bead963529.gif)
 
